@@ -145,7 +145,7 @@ public class Wordnik {
             // create a connection HTTPURLConnection object
             HttpURLConnection connection = (HttpURLConnection) urlquery.openConnection();
             connection.setRequestMethod("GET");
-            connection.setRequestProperty("Content", "application/json");
+            connection.setRequestProperty("Accept", "application/json");
 
             // if the connection got some valid response
             if (connection.getResponseCode() == 200) {
